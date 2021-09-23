@@ -1,0 +1,8 @@
+version: "3"
+services:
+  example:
+    image: cuelang/cue:0.4.0
+    command: eval examples.cue -e schema
+    working_dir: /src/example-api
+    volumes:
+      - ./:/src
