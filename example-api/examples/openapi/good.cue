@@ -1,8 +1,6 @@
-package examples
 import spec "github.com/pilchard-friendly/openapi-cuelang/spec_v3_0_0"
 
-schema: spec.Spec & {
-    openapi: "3.0.0"
+spec.Spec & {
     info: {
         version: "1.0.0"
         title: "Example API"

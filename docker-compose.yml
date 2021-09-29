@@ -1,8 +1,8 @@
 version: "3"
 services:
-  example:
+  tests:
     image: cuelang/cue:0.4.0
-    command: eval examples.cue -e schema
+    command: ["eval", "--trace", "-c",  "tests.cue", "-e","Tests"]
     working_dir: /src/example-api
     volumes:
       - ./:/src
